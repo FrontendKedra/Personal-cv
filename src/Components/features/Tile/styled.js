@@ -8,16 +8,16 @@ export const Tile = styled.article`
   border-bottom: 1px solid #d1d5da4d;
 `;
 
-export const Header = styled.header`
+export const TileHeader = styled.header`
   font-weight: 900;
   font-size: 30px;
 `;
 
-export const Icon = styled.p`
+export const TileIcon = styled.p`
   margin-left: 16px;
 `;
 
-export const List = styled.ul`
+export const TileList = styled.ul`
   margin-top: 32px;
   padding-left: 0px;
   display: grid;
@@ -25,7 +25,7 @@ export const List = styled.ul`
   gap: 8px;
 `;
 
-export const ListItem = styled.li`
+export const TileListItem = styled.li`
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
@@ -33,7 +33,7 @@ export const ListItem = styled.li`
   color: #6e7e91;
 `;
 
-export const Paragraph = styled.p`
+export const TileParagraph = styled.p`
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
