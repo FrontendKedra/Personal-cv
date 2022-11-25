@@ -7,7 +7,7 @@ import {
   Span,
   IntroductionEmailLink,
   BasicInfoContainer,
-  IntroductionParagraph,
+  HeaderParagraph,
   IntroductionHeader,
   IntroductionText,
 } from "./styled";
@@ -21,7 +21,7 @@ export const Introduction = () => (
     <IntroductionImage src={tako} alt=""></IntroductionImage>
     <BasicInfoContainer>
       <BasicInfo
-        title={<IntroductionParagraph>This is</IntroductionParagraph>}
+        title={<HeaderParagraph>This is</HeaderParagraph>}
         headerContent={<IntroductionHeader>Szymon Kędra</IntroductionHeader>}
         body={
           <IntroductionText>
@@ -29,7 +29,7 @@ export const Introduction = () => (
             learning experiences.
           </IntroductionText>
         }
-        emailButton={
+        linkButton={
           <IntroductionEmailLink href="mailto:s5zee@wp.pl">
             {" "}
             <IntroductionEnvelope
