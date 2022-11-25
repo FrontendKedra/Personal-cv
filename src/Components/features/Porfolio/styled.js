@@ -65,3 +65,50 @@ export const RepositoryLink = styled.a`
   border-bottom: 1px solid #9999ff;
   text-decoration: none;
 `;
+
+export const LoadingParagraph = styled.p`
+  font-weight: 400;
+  font-size: 20px;
+  color: #252525;
+  margin: 88px 0 48px 0;
+`;
+
+export const DangerParagraph = styled.p`
+  font-weight: 700;
+  font-size: 24px;
+  color: #252525;
+  margin: 24px 0 32px 0;
+`;
+export const GithubButton = styled.button`
+  background-color: #0366d6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20.0584px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(209, 213, 218, 0.1);
+  border-radius: 4px;
+  padding: 12px 16px;
+  max-width: 168px;
+`;
+export const Icon = styled.p``;
+export const ErrorContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+`;
+
+export const ErrorText = styled.article`
+  font-weight: 400;
+  font-size: 20px;
+  color: #252525;
+  margin-bottom: 32px;
+  text-align: center;
+`;
+
+export const IconParagraph = styled.p`
+  margin: 96px 0 0 0;
+`;

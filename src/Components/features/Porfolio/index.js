@@ -9,7 +9,16 @@ import {
   Description,
   LinkContainer,
   RepositoryLink,
+  LoadingParagraph,
+  DangerParagraph,
+  GithubButton,
+  Icon,
+  ErrorContainer,
+  ErrorText,
+  IconParagraph,
 } from "./styled";
+import { ReactComponent as IconSpinner } from "../../../images/icon-spinner.svg";
+import { ReactComponent as DangerIcon } from "../../../images/Danger.svg";
 
 export const Portfolio = () => (
   <PortfolioContainer>
@@ -26,11 +35,15 @@ export const Portfolio = () => (
         </Description>
         <LinkContainer>
           <Description>Demo:</Description>
-          <RepositoryLink href="https://link.demo.com">https://link.demo.com</RepositoryLink>
+          <RepositoryLink href="https://link.demo.com">
+            https://link.demo.com
+          </RepositoryLink>
         </LinkContainer>
         <LinkContainer>
           <Description>Code:</Description>
-          <RepositoryLink href="https://link.demo.com">https://link.demo.com</RepositoryLink>
+          <RepositoryLink href="https://link.demo.com">
+            https://link.demo.com
+          </RepositoryLink>
         </LinkContainer>
       </RepositoryContainer>
       <RepositoryContainer>
@@ -43,11 +56,15 @@ export const Portfolio = () => (
         </Description>
         <LinkContainer>
           <Description>Demo:</Description>
-          <RepositoryLink href="https://link.demo.com">https://link.demo.com</RepositoryLink>
+          <RepositoryLink href="https://link.demo.com">
+            https://link.demo.com
+          </RepositoryLink>
         </LinkContainer>
         <LinkContainer>
           <Description>Code:</Description>
-          <RepositoryLink href="https://link.demo.com">https://link.demo.com</RepositoryLink>
+          <RepositoryLink href="https://link.demo.com">
+            https://link.demo.com
+          </RepositoryLink>
         </LinkContainer>
       </RepositoryContainer>
       <RepositoryContainer>
@@ -60,11 +77,15 @@ export const Portfolio = () => (
         </Description>
         <LinkContainer>
           <Description>Demo:</Description>
-          <RepositoryLink href="https://link.demo.com">https://link.demo.com</RepositoryLink>
+          <RepositoryLink href="https://link.demo.com">
+            https://link.demo.com
+          </RepositoryLink>
         </LinkContainer>
         <LinkContainer>
           <Description>Code:</Description>
-          <RepositoryLink href="https://link.demo.com">https://link.demo.com</RepositoryLink>
+          <RepositoryLink href="https://link.demo.com">
+            https://link.demo.com
+          </RepositoryLink>
         </LinkContainer>
       </RepositoryContainer>
       <RepositoryContainer>
@@ -77,13 +98,36 @@ export const Portfolio = () => (
         </Description>
         <LinkContainer>
           <Description>Demo:</Description>
-          <RepositoryLink href="https://link.demo.com">https://link.demo.com</RepositoryLink>
+          <RepositoryLink href="https://link.demo.com">
+            https://link.demo.com
+          </RepositoryLink>
         </LinkContainer>
         <LinkContainer>
           <Description>Code:</Description>
-          <RepositoryLink href="https://link.demo.com">https://link.demo.com</RepositoryLink>
+          <RepositoryLink href="https://link.demo.com">
+            https://link.demo.com
+          </RepositoryLink>
         </LinkContainer>
       </RepositoryContainer>
     </GithubReposContainer>
+    <LoadingParagraph>
+      Please wait, projects are being loaded...
+    </LoadingParagraph>
+    <Icon>
+      <IconSpinner />
+    </Icon>
+    <ErrorContainer>
+      <IconParagraph>
+        <DangerIcon />
+      </IconParagraph>
+      <DangerParagraph>Ooops! Something went wrong...</DangerParagraph>
+      <ErrorText>
+        Sorry, failed to load Github projects.
+        <br /> You can check them directly on Github.
+      </ErrorText>
+      <GithubButton as="a" href="https://github.com/s5zee">
+        Go To Github
+      </GithubButton>
+    </ErrorContainer>
   </PortfolioContainer>
 );
