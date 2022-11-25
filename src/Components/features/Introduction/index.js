@@ -14,7 +14,7 @@ import {
 import tako from "../../../images/tako.png";
 import { BasicInfo } from "../../common/BasicInfo";
 import envelope from "../../../images/envelope.png";
-import toggle from "../../../images/toggle.png";
+import Toggle from "../../../images/Toggle.svg";
 
 export const Introduction = () => (
   <IntroductionContainer>
@@ -44,7 +44,7 @@ export const Introduction = () => (
     <Span>
       <BackgroundButtonText>Dark mode off</BackgroundButtonText>
       <ToggleBackgroundButton>
-        {<img src={toggle} alt=""></img>}
+        {<img src={Toggle} alt=""></img>}
       </ToggleBackgroundButton>
     </Span>
   </IntroductionContainer>
