@@ -65,6 +65,9 @@ export const ToggleBackgroundButton = styled.button`
   width: 47.06px;
   height: 25.07px;
   border-radius: 30px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 `;
 
 export const BackgroundButtonText = styled.p`
