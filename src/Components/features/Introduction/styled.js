@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const IntroductionContainer = styled.div`
   max-width: 1200px;
-  margin: auto;
   display: grid;
   grid-template-columns: auto 4fr auto;
   margin-bottom: 64px;
@@ -16,7 +15,7 @@ export const IntroductionImage = styled.img`
   margin-right: 66px;
 `;
 
-export const IntroductionParagraph = styled.p`
+export const HeaderParagraph = styled.p`
   color: #6e7e91;
   margin-bottom: 12px;
   font-weight: 700;
