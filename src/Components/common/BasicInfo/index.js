@@ -2,12 +2,12 @@ export const BasicInfo = ({
   title,
   headerContent,
   body,
-  emailButton,
+  linkButton,
 }) => (
   <article>
     {title}
     {headerContent}
     {body}
-    {emailButton}
+    {linkButton}
   </article>
 );
