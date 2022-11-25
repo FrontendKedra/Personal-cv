@@ -6,6 +6,7 @@ export const ToLearnList = () => {
     { content: "React Query", id: 25 },
     { content: "TypeScript", id: 26 },
     { content: "JS classes", id: 27 },
+    { content: "React-router 6.0", id: 28 },
   ];
   return (
     <TileList>
