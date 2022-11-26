@@ -36,9 +36,13 @@ export const RepositoryContainer = styled.div`
   gap: 24px;
   border-radius: 4px;
   background-color: #ffffff;
-  border: 6px solid rgba(209, 213, 218, 0.3);
+  border: 6px solid #d1d5da4d;
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
+
+  &:hover {
+    border: 6px solid #0366d633;
+  }
 `;
 
 export const RepositoryHeader = styled.header`
@@ -64,6 +68,10 @@ export const RepositoryLink = styled.a`
   color: #0366d6;
   border-bottom: 1px solid #9999ff;
   text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid #0366d6cc;
+  }
 `;
 
 export const LoadingParagraph = styled.p`
@@ -79,6 +87,7 @@ export const DangerParagraph = styled.p`
   color: #252525;
   margin: 24px 0 32px 0;
 `;
+
 export const GithubButton = styled.button`
   background-color: #0366d6;
   text-decoration: none;
@@ -93,8 +102,15 @@ export const GithubButton = styled.button`
   border-radius: 4px;
   padding: 12px 16px;
   max-width: 168px;
+
+  &:hover {
+    box-shadow: 2px -2px 0px #8cc2ff, -2px 2px 0px #8cc2ff;
+  }
 `;
-export const Icon = styled.p``;
+
+export const Icon = styled.p`
+`;
+
 export const ErrorContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
