@@ -10,12 +10,11 @@ import { getGithubRepositories } from "./getGithubRepositories";
 function* fetchReposResponseHandler() {
   try {
     yield delay(2000);
-    yield put(reposSuccess);
+    yield put(reposSuccess());
     const reposResponse = yield call(getGithubRepositories);
     yield put(setRepos(reposResponse));
   } catch (error) {
-    yield put(reposError);
-    yield call(alert, "cos poszlo nie tak");
+    yield put(reposError());
   }
 }
 
