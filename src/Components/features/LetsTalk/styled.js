@@ -6,6 +6,10 @@ export const EmailAdress = styled.a`
   color: #252525;
   text-decoration: none;
   margin-top: 24px;
+
+    &:hover {
+      color: #0366d6;
+    }
 `;
 
 export const LetsTalkText = styled.p`
@@ -24,6 +28,10 @@ export const GithubLink = styled.a`
   background-color: #dadada;
   width: 48px;
   height: 48px;
+
+    &:hover {
+      background-color: #0366d6;
+    }
 `;
 
 export const LinkedInLink = styled.a`
@@ -31,11 +39,15 @@ export const LinkedInLink = styled.a`
   color: #252525;
   width: 48px;
   height: 48px;
+
+    &:hover {
+      color: #0366d6;
+    }
 `;
 
 export const ExternalLinksContainer = styled.div`
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 24px;
-    margin-top: 56px;
-`
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  margin-top: 56px;
+`;
