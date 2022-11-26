@@ -109,6 +109,17 @@ export const GithubButton = styled.button`
 `;
 
 export const Icon = styled.p`
+  animation: rotation 1s infinite linear;
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 `;
 
 export const ErrorContainer = styled.div`
