@@ -15,7 +15,7 @@ export const LetsTalk = () => (
   <LetsTalkContainer>
     <BasicInfo
       title={<HeaderParagraph>Lets talk!</HeaderParagraph>}
-      headerContent={<EmailAdress href="s5zee@wp.pl">s5zee@wp.pl</EmailAdress>}
+      headerContent={<EmailAdress href="mailto:s5zee@wp.pl">s5zee@wp.pl</EmailAdress>}
       body={
         <LetsTalkText>
           I’m always open to new projects whenever I have the time. If you have
