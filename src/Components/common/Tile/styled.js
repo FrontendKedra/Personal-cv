@@ -5,16 +5,11 @@ export const Tile = styled.article`
   grid-template-columns: auto 1fr;
   align-items: center;
   padding-bottom: 15px;
-  border-bottom: 1px solid #d1d5da4d;
-`;
+  border-bottom: 1px solid ${({theme}) => theme.colors.iron};
 
-export const TileHeader = styled.header`
-  font-weight: 900;
-  font-size: 30px;
-`;
-
-export const TileIcon = styled.p`
-  margin-left: 16px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    padding-bottom: 12px;
+  }
 `;
 
 export const TileList = styled.ul`
@@ -23,6 +18,11 @@ export const TileList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    grid-template-columns: 1fr;
+    margin-top: 12px;
+  }
 `;
 
 export const TileListItem = styled.li`
@@ -30,7 +30,12 @@ export const TileListItem = styled.li`
   font-size: 18px;
   line-height: 140%;
   list-style: none;
-  color: #6e7e91;
+  color: ${({theme})=> theme.colors.slateGray};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 `;
 
 export const TileParagraph = styled.p`
