@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
+        word-break: break-word;
     }
 
     *, ::after, ::before {
@@ -10,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     body {
-        background: #E5E5E5;
+        background: ${({theme}) => theme.colors.mercury};
         font-family: 'Inter';
     }
 `;
