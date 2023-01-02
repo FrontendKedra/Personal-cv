@@ -1,5 +1,4 @@
-import { Container } from "../../features/Container";
-import { TileHeader, TileIcon, Tile } from "../../features/Tile/styled";
+import { Container, TileHeader, TileIcon, Tile } from "./styled";
 
 export const Skillset = ({ title, titleIcon, skillSetList }) => (
   <Container>
