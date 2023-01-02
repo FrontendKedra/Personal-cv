@@ -1,17 +1,5 @@
 import styled from "styled-components";
 
-export const Tile = styled.article`
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  padding-bottom: 15px;
-  border-bottom: 1px solid ${({theme}) => theme.colors.iron};
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    padding-bottom: 12px;
-  }
-`;
-
 export const TileList = styled.ul`
   margin-top: 32px;
   padding-left: 0px;
