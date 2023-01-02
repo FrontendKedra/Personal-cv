@@ -1,19 +1,15 @@
-import { TileList, TileParagraph, TileListItem } from "../Tile/styled";
+import { TileList, TileParagraph, TileListItem } from "../../common/Tile/styled";
 import Eliipse from "../../../images/Eliipse.png";
+import { toLearnItemList } from "./toLearnItemList";
 
 export const ToLearnList = () => {
-  const toLearnItemList = [
-    { content: "React Query", id: 25 },
-    { content: "TypeScript", id: 26 },
-    { content: "JS classes", id: 27 },
-    { content: "React-router 6.0", id: 28 },
-  ];
+  const itemList = toLearnItemList;
   return (
     <TileList>
-      {toLearnItemList.map(({ id, content }) => (
-        <TileParagraph>
+      {itemList.map(({ id, content }) => (
+        <TileParagraph key={id}>
           <img src={Eliipse} alt="" />
-          <TileListItem key={id}>{content}</TileListItem>
+          <TileListItem>{content}</TileListItem>
         </TileParagraph>
       ))}
     </TileList>
