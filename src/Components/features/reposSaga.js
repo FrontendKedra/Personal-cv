@@ -18,6 +18,6 @@ function* fetchReposResponseHandler() {
   }
 }
 
-export function* reposResponse() {
+export function* watchReposResponse() {
   yield takeEvery(fetchReposResponse.type, fetchReposResponseHandler);
 }

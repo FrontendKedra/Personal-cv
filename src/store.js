@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga";
 import reposReducer from "./Components/features/reposSlice";
-import { reposResponse } from "./Components/features/reposSaga";
 import backgroundReducer from "./Components/features/Introduction/backgroundSlice"
+import rootSaga from "./rootSaga";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -14,4 +14,4 @@ export default configureStore({
   middleware: [sagaMiddleware],
 });
 
-sagaMiddleware.run(reposResponse);
+sagaMiddleware.run(rootSaga);
