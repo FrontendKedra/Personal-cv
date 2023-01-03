@@ -1,7 +1,7 @@
-import { Skillset } from "./Components/common/Skillset";
+import { SkillSet } from "./Components/common/SkillSet";
 import { Introduction } from "./Components/features/Introduction";
 import { Footer } from "./Components/features/Footer";
-import { SkillsetList } from "./Components/features/SkillsetList";
+import { SkillSetList } from "./Components/features/SkillSetList";
 import { ToLearnList } from "./Components/features/ToLearnList";
 import { Portfolio } from "./Components/features/Porfolio";
 import { AppContainer } from "./Components/common/AppContainer/styled";
@@ -18,12 +18,12 @@ function App() {
       <GlobalStyle />
       <AppContainer>
         <Introduction />
-        <Skillset
-          title={"My Skillset includes"}
+        <SkillSet
+          title={"My skill set includes"}
           titleIcon={"🛠️"}
-          skillSetList={<SkillsetList />}
+          skillSetList={<SkillSetList />}
         />
-        <Skillset
+        <SkillSet
           title={"What I want to learn next"}
           titleIcon={"🚀"}
           skillSetList={<ToLearnList />}

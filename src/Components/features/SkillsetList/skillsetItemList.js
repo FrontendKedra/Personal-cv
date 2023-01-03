@@ -1,4 +1,4 @@
-export const skillsetItemList = [
+export const skillSetItemList = [
   { content: "Semantic & accessible HTML", id: 1 },
   { content: "React Router", id: 2 },
   { content: "Promises, Async/Await", id: 3 },

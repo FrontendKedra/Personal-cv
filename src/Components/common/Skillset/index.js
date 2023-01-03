@@ -1,6 +1,6 @@
 import { Container, TileHeader, TileIcon, Tile } from "./styled";
 
-export const Skillset = ({ title, titleIcon, skillSetList }) => (
+export const SkillSet = ({ title, titleIcon, skillSetList }) => (
   <Container>
     <Tile>
       <TileHeader>{title}</TileHeader>

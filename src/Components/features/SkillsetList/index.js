@@ -1,9 +1,9 @@
 import { TileList, TileListItem, TileParagraph } from "../../common/Tile/styled";
 import Eliipse from "../../../images/Eliipse.png";
-import { skillsetItemList } from "./skillsetItemList";
+import { skillSetItemList } from "./skillSetItemList";
 
-export const SkillsetList = () => {
-  const itemList = skillsetItemList;
+export const SkillSetList = () => {
+  const itemList = skillSetItemList;
   return (
     <TileList>
       {itemList.map(({ id, content }) => (
