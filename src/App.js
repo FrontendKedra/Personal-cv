@@ -10,6 +10,8 @@ import { darkTheme, lightTheme } from "./theme";
 import { GlobalStyle } from "./GlobalStyle";
 import { selectDarkBackground } from "./Components/features/Introduction/backgroundSlice";
 import { useSelector } from "react-redux";
+import toolsIcon from "./images/toolsIcon.svg";
+import rocketIcon from "./images/rocketIcon.svg";
 
 function App() {
   const darkBackground = useSelector(selectDarkBackground);
@@ -20,12 +22,12 @@ function App() {
         <Introduction />
         <SkillSet
           title={"My skill set includes"}
-          titleIcon={"🛠️"}
+          titleIcon={<img src={toolsIcon} alt="tools icon" />}
           skillSetList={<SkillSetList />}
         />
         <SkillSet
           title={"What I want to learn next"}
-          titleIcon={"🚀"}
+          titleIcon={<img src={rocketIcon} alt="rocket icon" />}
           skillSetList={<ToLearnList />}
         />
         <Portfolio />
