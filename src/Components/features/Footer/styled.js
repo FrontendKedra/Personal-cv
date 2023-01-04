@@ -19,10 +19,11 @@ export const EmailAdress = styled.a`
   }
 `;
 
-export const LetsTalkText = styled.p`
+export const Text = styled.p`
   font-size: 18px;
   font-weight: 400;
   margin-top: 24px;
+  color: ${({theme}) => theme.colors.mineShaft};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     font-size: 18px;
@@ -31,7 +32,7 @@ export const LetsTalkText = styled.p`
   }
 `;
 
-export const LetsTalkContainer = styled.div`
+export const Container = styled.div`
   max-width: 691px;
   margin-top: 120px;
 

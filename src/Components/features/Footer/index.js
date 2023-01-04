@@ -1,7 +1,7 @@
 import {
   EmailAdress,
-  LetsTalkText,
-  LetsTalkContainer,
+  Text,
+  Container,
   LinkedInLink,
   GithubLink,
   ExternalLinksContainer,
@@ -11,14 +11,14 @@ import { ReactComponent as LinkedIn } from "../../../images/LinkedIn.svg";
 import { HeaderParagraph } from "../../common/styled";
 
 export const Footer = () => (
-  <LetsTalkContainer>
+  <Container>
     <HeaderParagraph>Lets talk!</HeaderParagraph>
     <EmailAdress href="mailto:s5zee@wp.pl">s5zee@wp.pl</EmailAdress>
-    <LetsTalkText>
+    <Text>
       I’m always open to new projects whenever I have the time. If you have a
       website, dashboard or mobile app in mind and need some help to make your
-      ideas come to life, feel free to conatct me
-    </LetsTalkText>
+      ideas come to life, feel free to contact me
+    </Text>
     <ExternalLinksContainer>
       <GithubLink href="https://github.com/s5zee/">
         <Github />
@@ -27,5 +27,5 @@ export const Footer = () => (
         <LinkedIn />
       </LinkedInLink>
     </ExternalLinksContainer>
-  </LetsTalkContainer>
+  </Container>
 );
