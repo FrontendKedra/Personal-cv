@@ -6,9 +6,9 @@ export const EmailAdress = styled.a`
   color: ${({theme}) => theme.colors.mineShaft};
   text-decoration: none;
   margin-top: 24px;
+  transition: 0.3s;
 
   &:hover {
-    transition: 0.3s;
     color: ${({theme}) => theme.colors.scienceBlue};
   }
 
@@ -46,9 +46,9 @@ export const GithubLink = styled.a`
   color: ${({theme}) => theme.colors.mineShaft};
   width: 48px;
   height: 48px;
+  transition: 0.3s;
 
   &:hover {
-    transition: 0.3s;
     color: ${({theme}) => theme.colors.scienceBlue};
   }
 `;
@@ -58,9 +58,9 @@ export const LinkedInLink = styled.a`
   color: ${({theme}) => theme.colors.mineShaft};
   width: 48px;
   height: 48px;
+  transition: 0.3s;
 
   &:hover {
-    transition: 0.3s;
     color: ${({theme}) => theme.colors.scienceBlue};
   }
 `;
