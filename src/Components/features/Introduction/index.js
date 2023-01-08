@@ -12,14 +12,14 @@ import {
   Img,
 } from "./styled";
 import tako from "../../../images/tako.png";
-import envelope from "../../../images/envelope.svg";
-import Toggle from "../../../images/Toggle.svg";
+import envelope from "./icons/envelope.svg";
 import { HeaderParagraph } from "../../common/styled";
-import { useDispatch } from "react-redux";
-import { toggleBackgroundColor } from "./backgroundSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { selectDarkBackground, toggleBackgroundColor } from "./backgroundSlice";
 
 export const Introduction = () => {
   const dispatch = useDispatch();
+  const darkBackground = useSelector(selectDarkBackground);
 
   return (
     <IntroductionContainer>
@@ -37,11 +37,13 @@ export const Introduction = () => {
         </IntroductionEmailLink>
       </BasicInfoContainer>
       <Span>
-        <BackgroundButtonText>Dark mode off</BackgroundButtonText>
+        <BackgroundButtonText>
+          {darkBackground ? `Dark mode on` : `Dark mode off`}
+        </BackgroundButtonText>
         <ToggleBackgroundButton
           onClick={() => dispatch(toggleBackgroundColor())}
         >
-          <Img src={Toggle} alt=""></Img>
+          <Img darkBackground={darkBackground} />
         </ToggleBackgroundButton>
       </Span>
     </IntroductionContainer>
