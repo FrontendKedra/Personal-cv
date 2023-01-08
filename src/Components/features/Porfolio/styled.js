@@ -65,6 +65,10 @@ export const RepositoryContainer = styled.div`
     border: 6px solid ${({ theme }) => theme.colors.lightBlue};
   }
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    padding: 28px;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     gap: 16px;
     padding: 18px;
@@ -98,6 +102,7 @@ export const LinkContainer = styled.div`
   grid-template-columns: auto auto;
   justify-content: start;
   gap: 8px;
+  height: max-content;
 `;
 
 export const RepositoryLink = styled.a`
