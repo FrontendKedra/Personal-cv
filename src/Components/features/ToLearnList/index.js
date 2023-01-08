@@ -1,17 +1,21 @@
-import { TileList, TileParagraph, TileListItem } from "../../common/Tile/styled";
-import Eliipse from "../../../images/Eliipse.png";
+import {
+  List,
+  Paragraph,
+  ListItem,
+} from "../../common/Skills/styled";
+import Eliipse from "../../../images/eliipse.png";
 import { toLearnItemList } from "./toLearnItemList";
 
 export const ToLearnList = () => {
   const itemList = toLearnItemList;
   return (
-    <TileList>
+    <List>
       {itemList.map(({ id, content }) => (
-        <TileParagraph key={id}>
+        <Paragraph key={id}>
           <img src={Eliipse} alt="" />
-          <TileListItem>{content}</TileListItem>
-        </TileParagraph>
+          <ListItem>{content}</ListItem>
+        </Paragraph>
       ))}
-    </TileList>
+    </List>
   );
 };

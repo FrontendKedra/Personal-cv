@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TileList = styled.ul`
+export const List = styled.ul`
   margin-top: 32px;
   padding-left: 0px;
   display: grid;
@@ -13,7 +13,7 @@ export const TileList = styled.ul`
   }
 `;
 
-export const TileListItem = styled.li`
+export const ListItem = styled.li`
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
@@ -26,7 +26,7 @@ export const TileListItem = styled.li`
   }
 `;
 
-export const TileParagraph = styled.p`
+export const Paragraph = styled.p`
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;

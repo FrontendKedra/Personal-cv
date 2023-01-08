@@ -1,4 +1,4 @@
-import { ReactComponent as GithubIcon } from "../../../images/Shape.svg";
+import { ReactComponent as GithubIcon } from "./shape.svg";
 import {
   PortfolioContainer,
   PortfolioParagraph,
@@ -9,16 +9,7 @@ import {
   Description,
   LinkContainer,
   RepositoryLink,
-  LoadingParagraph,
-  DangerParagraph,
-  GithubButton,
-  Icon,
-  ErrorContainer,
-  ErrorText,
-  IconParagraph,
 } from "./styled";
-import { ReactComponent as IconSpinner } from "../../../images/icon-spinner.svg";
-import { ReactComponent as DangerIcon } from "../../../images/Danger.svg";
 import { useDispatch, useSelector } from "react-redux";
 import {
   fetchReposResponse,
@@ -26,6 +17,8 @@ import {
   selectReposCurrentState,
 } from "../reposSlice";
 import { useEffect } from "react";
+import { Loader } from "./states/Loader";
+import { Error } from "./states/Error";
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
@@ -42,28 +35,9 @@ export const Portfolio = () => {
       <PortfolioParagraph>Portfolio</PortfolioParagraph>
       <Span>My recent projects</Span>
       {reposState.loading === true ? (
-        <>
-          <LoadingParagraph>
-            Please wait, projects are being loaded...
-          </LoadingParagraph>
-          <Icon>
-            <IconSpinner />
-          </Icon>
-        </>
+        <Loader />
       ) : reposState.error === true ? (
-        <ErrorContainer>
-          <IconParagraph>
-            <DangerIcon />
-          </IconParagraph>
-          <DangerParagraph>Ooops! Something went wrong...</DangerParagraph>
-          <ErrorText>
-            Sorry, failed to load Github projects.
-            <br /> You can check them directly on Github.
-          </ErrorText>
-          <GithubButton as="a" href="https://github.com/s5zee">
-            Go To Github
-          </GithubButton>
-        </ErrorContainer>
+        <Error />
       ) : (
         <GithubReposContainer>
           {repos.map((repo) => (

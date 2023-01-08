@@ -1,25 +1,5 @@
 import styled from "styled-components";
 
-
-export const TileHeader = styled.header`
-  font-weight: 900;
-  font-size: 30px;
-  color: ${({theme}) => theme.colors.mineShaft};
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    font-size: 18px;
-    line-height: 22px;
-  }
-`;
-
-export const TileIcon = styled.p`
-  margin: 0 0 0 16px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    margin: 0 0 0 12px;
-  }
-`;
-
 export const Container = styled.div`
   border-radius: 4px;
   background: ${({theme}) => theme.colors.white};
@@ -37,5 +17,24 @@ export const Tile = styled.article`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     padding-bottom: 12px;
+  }
+`;
+
+export const TileHeader = styled.header`
+  font-weight: 900;
+  font-size: 30px;
+  color: ${({theme}) => theme.colors.mineShaft};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+`;
+
+export const TileIcon = styled.p`
+  margin: 0 0 0 16px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    margin: 0 0 0 12px;
   }
 `;

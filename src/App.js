@@ -4,7 +4,7 @@ import { Footer } from "./Components/features/Footer";
 import { SkillSetList } from "./Components/features/SkillSetList";
 import { ToLearnList } from "./Components/features/ToLearnList";
 import { Portfolio } from "./Components/features/Porfolio";
-import { AppContainer } from "./Components/common/AppContainer/styled";
+import { AppContainer } from "./Components/features/AppContainer/styled";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./theme";
 import { GlobalStyle } from "./GlobalStyle";

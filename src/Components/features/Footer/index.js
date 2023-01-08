@@ -6,8 +6,8 @@ import {
   GithubLink,
   ExternalLinksContainer,
 } from "./styled";
-import { ReactComponent as Github } from "../../../images/Github.svg";
-import { ReactComponent as LinkedIn } from "../../../images/LinkedIn.svg";
+import { ReactComponent as Github } from "./icons/github.svg";
+import { ReactComponent as LinkedIn } from "./icons/linkedIn.svg"
 import { HeaderParagraph } from "../../common/styled";
 
 export const Footer = () => (
