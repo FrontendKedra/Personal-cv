@@ -9,7 +9,7 @@ import { getGithubRepositories } from "./getGithubRepositories";
 
 function* fetchReposResponseHandler() {
   try {
-    yield delay(2000);
+    yield delay(1500);
     yield put(reposSuccess());
     const reposResponse = yield call(getGithubRepositories);
     yield put(setRepos(reposResponse));
