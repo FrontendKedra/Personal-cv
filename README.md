@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Personal-cv
 
 ## Description:
 
@@ -14,6 +12,9 @@ s5zee.github.io/Personal-cv/
 
 ![image](https://user-images.githubusercontent.com/109352604/211385642-3398f5eb-458e-4921-af17-7e65aee23289.png)
 
+## Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
