@@ -2,6 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Description:
+
+My personal cv page containing stack information, contant email, github, linkedin links. Created using react, styled components, redux, APi, flex, grid
+
+## Demo: 
+
+s5zee.github.io/Personal-cv/
+
+## Preview
+
+![image](https://user-images.githubusercontent.com/109352604/211385642-3398f5eb-458e-4921-af17-7e65aee23289.png)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
