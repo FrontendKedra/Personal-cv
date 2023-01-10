@@ -149,6 +149,7 @@ export const ToggleBackgroundButton = styled.button`
   border-radius: 30px;
   display: grid;
   align-content: center;
+  cursor: pointer;
 `;
 
 export const Img = styled(toggle)`
