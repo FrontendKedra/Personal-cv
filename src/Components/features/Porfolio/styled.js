@@ -41,9 +41,6 @@ export const GithubReposContainer = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     gap: 16px;
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     grid-template-columns: 1fr;
   }
 `;
@@ -57,11 +54,11 @@ export const RepositoryContainer = styled.div`
   border-radius: 4px;
   background-color: ${({ theme }) => theme.colors.white};
   border: 6px solid ${({ theme }) => theme.colors.gray};
+  transition: 0.3s;
   box-shadow: 0px -2px 50px ${({ theme }) => theme.colors.violet},
-    0px 16px 58px ${({ theme }) => theme.colors.darkerViolet};
+    0px 16px 58px ${({ theme }) => theme.colors.darkerViolet}; 
 
   &:hover {
-    transition: 0.3s;
     border: 6px solid ${({ theme }) => theme.colors.lightBlue};
   }
 
