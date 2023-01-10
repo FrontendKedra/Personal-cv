@@ -13,9 +13,9 @@ import {
 } from "./styled";
 import authorImage from "./images/cvImage.png";
 import envelope from "./images/envelope.svg";
-import { HeaderParagraph } from "../../common/styled";
 import { useDispatch, useSelector } from "react-redux";
 import { selectDarkBackground, toggleBackgroundColor } from "./backgroundSlice";
+import { HeaderParagraph } from "../../common/HeaderParagraph/styled";
 
 export const Introduction = () => {
   const dispatch = useDispatch();
