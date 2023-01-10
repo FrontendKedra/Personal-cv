@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { css } from "styled-components";
-import { ReactComponent as toggle } from "./icons/toggle.svg";
+import { ReactComponent as toggle } from "./images/toggle.svg";
 
 export const IntroductionContainer = styled.div`
   max-width: 1200px;

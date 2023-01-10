@@ -11,8 +11,8 @@ import {
   IntroductionText,
   Img,
 } from "./styled";
-import tako from "../../../images/tako.png";
-import envelope from "./icons/envelope.svg";
+import authorImage from "./images/cvImage.png";
+import envelope from "./images/envelope.svg";
 import { HeaderParagraph } from "../../common/styled";
 import { useDispatch, useSelector } from "react-redux";
 import { selectDarkBackground, toggleBackgroundColor } from "./backgroundSlice";
@@ -23,7 +23,7 @@ export const Introduction = () => {
 
   return (
     <IntroductionContainer>
-      <IntroductionImage src={tako} alt=""></IntroductionImage>
+      <IntroductionImage src={authorImage} alt=""></IntroductionImage>
       <BasicInfoContainer>
         <HeaderParagraph>This is</HeaderParagraph>
         <IntroductionHeader>Szymon Kędra</IntroductionHeader>
