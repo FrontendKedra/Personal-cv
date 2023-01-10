@@ -2,13 +2,12 @@ import {
   EmailAdress,
   Text,
   Container,
-  LinkedInLink,
-  GithubLink,
+  Link,
   ExternalLinksContainer,
 } from "./styled";
 import { ReactComponent as Github } from "./icons/github.svg";
-import { ReactComponent as LinkedIn } from "./icons/linkedIn.svg"
-import { HeaderParagraph } from "../../common/styled";
+import { ReactComponent as LinkedIn } from "./icons/linkedIn.svg";
+import { HeaderParagraph } from "../../common/HeaderParagraph/styled";
 
 export const Footer = () => (
   <Container>
@@ -20,12 +19,12 @@ export const Footer = () => (
       ideas come to life, feel free to contact me
     </Text>
     <ExternalLinksContainer>
-      <GithubLink href="https://github.com/s5zee/">
+      <Link href="https://github.com/s5zee/">
         <Github />
-      </GithubLink>
-      <LinkedInLink href="https://www.linkedin.com/">
+      </Link>
+      <Link href="https://www.linkedin.com/">
         <LinkedIn />
-      </LinkedInLink>
+      </Link>
     </ExternalLinksContainer>
   </Container>
 );

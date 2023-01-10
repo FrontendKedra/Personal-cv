@@ -53,19 +53,7 @@ export const ExternalLinksContainer = styled.div`
   }
 `;
 
-export const GithubLink = styled.a`
-  display: inline-block;
-  color: ${({ theme }) => theme.colors.mineShaft};
-  width: 48px;
-  height: 48px;
-  transition: 0.3s;
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.scienceBlue};
-  }
-`;
-
-export const LinkedInLink = styled.a`
+export const Link = styled.a`
   display: inline-block;
   color: ${({ theme }) => theme.colors.mineShaft};
   width: 48px;
