@@ -1,8 +1,6 @@
 import { SkillSet } from "./Components/common/SkillSet";
 import { Introduction } from "./Components/features/Introduction";
 import { Footer } from "./Components/features/Footer";
-import { SkillSetList } from "./Components/features/SkillSetList";
-import { ToLearnList } from "./Components/features/ToLearnList";
 import { Portfolio } from "./Components/features/Porfolio";
 import { AppContainer } from "./Components/features/AppContainer/styled";
 import { ThemeProvider } from "styled-components";
@@ -12,6 +10,9 @@ import { selectDarkBackground } from "./Components/features/Introduction/backgro
 import { useSelector } from "react-redux";
 import toolsIcon from "./images/toolsIcon.svg";
 import rocketIcon from "./images/rocketIcon.svg";
+import eliipse from "./images/eliipse.png";
+import { toLearnItemList } from "./Components/features/SkillSetLists/toLearnItemList";
+import { skillSetItemList } from "./Components/features/SkillSetLists/skillSetItemList";
 
 function App() {
   const darkBackground = useSelector(selectDarkBackground);
@@ -23,12 +24,14 @@ function App() {
         <SkillSet
           title={"My skill set includes"}
           titleIcon={<img src={toolsIcon} alt="tools icon" />}
-          skillSetList={<SkillSetList />}
+          ellipse={eliipse}
+          itemsList={skillSetItemList}
         />
         <SkillSet
           title={"What I want to learn next"}
           titleIcon={<img src={rocketIcon} alt="rocket icon" />}
-          skillSetList={<ToLearnList />}
+          ellipse={eliipse}
+          itemsList={toLearnItemList}
         />
         <Portfolio />
         <Footer />
