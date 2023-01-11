@@ -53,6 +53,7 @@ export const IntroductionHeader = styled.header`
   font-weight: 900;
   font-size: 38px;
   color: ${({ theme }) => theme.colors.mineShaft};
+
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     font-size: 26px;
   }
@@ -154,7 +155,7 @@ export const ToggleBackgroundButton = styled.button`
 
 export const Img = styled(toggle)`
   background-color: ${({ theme }) => theme.colors.slateGray};
-  transition: 0.2s;
+  transition: 0.3s;
   border-radius: ${({ theme }) => theme.borderRadius.large};
   padding: 2px;
   transform: translateX(-22%);
