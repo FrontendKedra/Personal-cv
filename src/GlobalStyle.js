@@ -13,5 +13,6 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background: ${({ theme }) => theme.colors.mercury};
         font-family: 'Inter';
+        transition: 0.3s;
     }
 `;
