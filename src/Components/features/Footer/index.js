@@ -22,7 +22,7 @@ export const Footer = () => (
       <Link href="https://github.com/s5zee/">
         <Github />
       </Link>
-      <Link href="https://www.linkedin.com/">
+      <Link href="https://www.linkedin.com/in/kedrafrontend/">
         <LinkedIn />
       </Link>
     </ExternalLinksContainer>
