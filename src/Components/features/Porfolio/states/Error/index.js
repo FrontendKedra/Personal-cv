@@ -14,7 +14,7 @@ export const Error = () => (
       Sorry, failed to load Github projects.
       <br /> You can check them directly on Github.
     </ErrorText>
-    <GithubButton as="a" href="https://github.com/s5zee">
+    <GithubButton as="a" href="https://github.com/frontendkedra">
       Go To Github
     </GithubButton>
   </ErrorContainer>

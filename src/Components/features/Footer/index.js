@@ -19,7 +19,7 @@ export const Footer = () => (
       ideas come to life, feel free to contact me
     </Text>
     <ExternalLinksContainer>
-      <Link href="https://github.com/s5zee/">
+      <Link href="https://github.com/frontendkedra/">
         <Github />
       </Link>
       <Link href="https://www.linkedin.com/in/kedrafrontend/">

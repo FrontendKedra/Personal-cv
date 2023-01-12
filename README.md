@@ -6,7 +6,7 @@ My personal cv page containing stack information, contant email, github, linkedi
 
 ## Demo: 
 
-https://s5zee.github.io/Personal-cv/
+https://frontendkedra.github.io/Personal-cv/
 
 ## Preview
 
