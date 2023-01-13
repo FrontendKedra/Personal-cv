@@ -31,7 +31,7 @@ export const Introduction = () => {
           I'm a begineer frontend developer, currently seeking new job and
           learning experiences.
         </IntroductionText>
-        <IntroductionEmailLink href="mailto:s5zee@wp.pl">
+        <IntroductionEmailLink href="mailto:kedfrontend@gmail.com">
           <IntroductionEnvelope src={envelope} alt=""></IntroductionEnvelope>
           Hire Me
         </IntroductionEmailLink>

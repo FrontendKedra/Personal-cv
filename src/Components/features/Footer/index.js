@@ -12,7 +12,9 @@ import { HeaderParagraph } from "../../common/HeaderParagraph/styled";
 export const Footer = () => (
   <Container>
     <HeaderParagraph>Lets talk!</HeaderParagraph>
-    <EmailAdress href="mailto:s5zee@wp.pl">s5zee@wp.pl</EmailAdress>
+    <EmailAdress href="mailto:kedfrontend@gmail.com">
+      kedfrontend@gmail.com
+    </EmailAdress>
     <Text>
       I’m always open to new projects whenever I have the time. If you have a
       website, dashboard or mobile app in mind and need some help to make your
