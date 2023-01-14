@@ -46,15 +46,19 @@ export const Portfolio = () => {
               <Description>{repo.description}</Description>
               <LinkContainer>
                 <Description>Demo:</Description>
-                <RepositoryLink href={repo.homepage}>
-                  {repo.homepage}
-                </RepositoryLink>
+                <span>
+                  <RepositoryLink href={repo.homepage}>
+                    {repo.homepage}
+                  </RepositoryLink>
+                </span>
               </LinkContainer>
               <LinkContainer>
                 <Description>Code:</Description>
-                <RepositoryLink href={repo.html_url}>
-                  {repo.html_url}
-                </RepositoryLink>
+                <span>
+                  <RepositoryLink href={repo.html_url}>
+                    {repo.html_url}
+                  </RepositoryLink>
+                </span>
               </LinkContainer>
             </RepositoryContainer>
           ))}
