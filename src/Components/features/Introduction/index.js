@@ -11,7 +11,7 @@ import {
   IntroductionText,
   Img,
 } from "./styled";
-import authorImage from "./images/cvImage.png";
+import authorImage from "./images/cvImage.jpg";
 import envelope from "./images/envelope.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { selectDarkBackground, toggleBackgroundColor } from "./backgroundSlice";
