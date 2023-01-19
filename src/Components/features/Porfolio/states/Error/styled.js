@@ -43,7 +43,7 @@ export const GithubButton = styled.button`
   transition: 0.3s;
 
   &:hover {
-    box-shadow: 2px -2px 0px ${({ theme }) => theme.colors.anakiwa},
-      -2px 2px 0px ${({ theme }) => theme.colors.anakiwa};
+    box-shadow: 2px -2px 0px ${({ theme }) => theme.sharedColors.anakiwa},
+      -2px 2px 0px ${({ theme }) => theme.sharedColors.anakiwa};
   }
 `;

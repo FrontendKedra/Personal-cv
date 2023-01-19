@@ -1,4 +1,23 @@
+const sharedFields = {
+  sharedColors: {
+    violet: "#090a3305",
+    darkerViolet: "#090a3308",
+    anakiwa: "#8cc2ff",
+  },
+  breakpoints: {
+    small: "480px",
+    medium: "767px",
+    large: "921px",
+  },
+  borderRadius: {
+    small: "4px",
+    medium: "30px",
+    large: "50px",
+  },
+};
+
 export const lightTheme = {
+  ...sharedFields,
   colors: {
     iron: "#d1d5da",
     gray: "#d1d5da4d",
@@ -10,20 +29,7 @@ export const lightTheme = {
     scienceBlue: "#0366d6",
     lightBlue: "#0366d633",
     melrose: "#9999FF",
-    anakiwa: "#8cc2ff",
     mercury: "#e5e5e5",
-    violet: "#090a3305",
-    darkerViolet: "#090a3308",
-  },
-  breakpoints: {
-    small: "480px",
-    medium: "767px",
-    large: "921px",
-  },
-  borderRadius: {
-    small: "4px",
-    medium: "30px",
-    large: "50px",
   },
   shadows: {
     hoverShadow:
@@ -32,6 +38,7 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
+  ...sharedFields,
   colors: {
     iron: "#E5E5E5",
     gray: "#d1d5da1a",
@@ -43,20 +50,7 @@ export const darkTheme = {
     scienceBlue: "#2188FF",
     lightBlue: "#0366d680",
     melrose: "#2196f342",
-    anakiwa: "#8cc2ff",
     mercury: "#252525",
-    violet: "#090a3305",
-    darkerViolet: "#090a3308",
-  },
-  breakpoints: {
-    small: "480px",
-    medium: "767px",
-    large: "921px",
-  },
-  borderRadius: {
-    small: "4px",
-    medium: "30px",
-    large: "50px",
   },
   shadows: {
     repositoryShadow: "0px -2px 50px #090a3305, 0px 16px 58px #090a3308",

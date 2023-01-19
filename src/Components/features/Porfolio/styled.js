@@ -55,8 +55,8 @@ export const RepositoryContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
   border: 6px solid ${({ theme }) => theme.colors.gray};
   transition: 0.3s;
-  box-shadow: 0px -2px 50px ${({ theme }) => theme.colors.violet},
-    0px 16px 58px ${({ theme }) => theme.colors.darkerViolet}; 
+  box-shadow: 0px -2px 50px ${({ theme }) => theme.sharedColors.violet},
+    0px 16px 58px ${({ theme }) => theme.sharedColors.darkerViolet}; 
 
   &:hover {
     border: 6px solid ${({ theme }) => theme.colors.lightBlue};
