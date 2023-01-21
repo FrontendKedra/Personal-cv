@@ -47,7 +47,7 @@ export const Portfolio = () => {
               <LinkContainer>
                 <Description>Demo:</Description>
                 <span>
-                  <RepositoryLink href={repo.homepage}>
+                  <RepositoryLink href={repo.homepage} target="_blank" rel="noreferrer noopener">
                     {repo.homepage}
                   </RepositoryLink>
                 </span>
@@ -55,7 +55,7 @@ export const Portfolio = () => {
               <LinkContainer>
                 <Description>Code:</Description>
                 <span>
-                  <RepositoryLink href={repo.html_url}>
+                  <RepositoryLink href={repo.html_url} target="_blank" rel="noreferrer noopener">
                     {repo.html_url}
                   </RepositoryLink>
                 </span>

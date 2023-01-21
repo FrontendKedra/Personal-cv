@@ -12,7 +12,7 @@ import { HeaderParagraph } from "../../common/HeaderParagraph/styled";
 export const Footer = () => (
   <Container>
     <HeaderParagraph>Lets talk!</HeaderParagraph>
-    <EmailAdress href="mailto:kedfrontend@gmail.com">
+    <EmailAdress href="mailto:kedfrontend@gmail.com" rel="noreferrer noopener">
       kedfrontend@gmail.com
     </EmailAdress>
     <Text>
@@ -21,10 +21,10 @@ export const Footer = () => (
       ideas come to life, feel free to contact me
     </Text>
     <ExternalLinksContainer>
-      <Link href="https://github.com/frontendkedra/">
+      <Link href="https://github.com/frontendkedra/" target="_blank" rel="noreferrer noopener">
         <Github />
       </Link>
-      <Link href="https://www.linkedin.com/in/kedrafrontend/">
+      <Link href="https://www.linkedin.com/in/kedrafrontend/" target="_blank" rel="noreferrer noopener">
         <LinkedIn />
       </Link>
     </ExternalLinksContainer>
