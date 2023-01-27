@@ -43,7 +43,7 @@ export const Introduction = () => {
         <ToggleBackgroundButton
           onClick={() => dispatch(toggleBackgroundColor())}
         >
-          <Img darkBackground={darkBackground} />
+          <Img $darkBackground={darkBackground} />
         </ToggleBackgroundButton>
       </Span>
     </IntroductionContainer>
