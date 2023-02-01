@@ -31,7 +31,10 @@ export const Introduction = () => {
           I'm a begineer frontend developer, currently seeking new job and
           learning experiences.
         </IntroductionText>
-        <IntroductionEmailLink href="mailto:kedfrontend@gmail.com" rel="noreferrer noopener">
+        <IntroductionEmailLink
+          href="mailto:kedfrontend@gmail.com"
+          rel="noreferrer noopener"
+        >
           <IntroductionEnvelope src={envelope} alt=""></IntroductionEnvelope>
           Hire Me
         </IntroductionEmailLink>
@@ -43,7 +46,7 @@ export const Introduction = () => {
         <ToggleBackgroundButton
           onClick={() => dispatch(toggleBackgroundColor())}
         >
-          <Img $darkBackground={darkBackground} />
+          <Img darkBackground={darkBackground} />
         </ToggleBackgroundButton>
       </Span>
     </IntroductionContainer>
