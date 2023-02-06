@@ -1,4 +1,14 @@
-const sharedFields = {
+export interface ThemeFields {
+  [index: string]: string;
+}
+
+export interface Theme {
+  sharedColors: ThemeFields;
+  breakpoints: ThemeFields;
+  borderRadius: ThemeFields;
+}
+
+const sharedFields: Theme = {
   sharedColors: {
     violet: "#090a3305",
     darkerViolet: "#090a3308",
