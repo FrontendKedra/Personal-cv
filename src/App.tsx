@@ -16,6 +16,10 @@ import { skillSetItemList } from "./Components/features/SkillSetLists/skillSetIt
 
 function App() {
   const darkBackground = useSelector(selectDarkBackground);
+  const toolsIconPath: string = toolsIcon;
+  const rocketIconPath: string = rocketIcon;
+  const eliipsePath: string = eliipse;
+
   return (
     <ThemeProvider theme={darkBackground ? darkTheme : lightTheme}>
       <GlobalStyle />
@@ -23,14 +27,14 @@ function App() {
         <Introduction />
         <SkillSet
           title={"My skill set includes"}
-          titleIcon={<img src={toolsIcon} alt="tools icon" />}
-          ellipse={eliipse}
+          titleIcon={<img src={toolsIconPath} alt="tools icon" />}
+          ellipse={eliipsePath}
           itemsList={skillSetItemList}
         />
         <SkillSet
           title={"What I want to learn next"}
-          titleIcon={<img src={rocketIcon} alt="rocket icon" />}
-          ellipse={eliipse}
+          titleIcon={<img src={rocketIconPath} alt="rocket icon" />}
+          ellipse={eliipsePath}
           itemsList={toLearnItemList}
         />
         <Portfolio />
