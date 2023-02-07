@@ -6,7 +6,7 @@ import {
   GithubButton,
 } from "./styled";
 
-export const Error = () => (
+export const Error: React.FC = () => (
   <ErrorContainer>
     <DangerIcon />
     <DangerParagraph>Ooops! Something went wrong...</DangerParagraph>

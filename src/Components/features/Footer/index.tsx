@@ -9,7 +9,7 @@ import { ReactComponent as Github } from "./icons/github.svg";
 import { ReactComponent as LinkedIn } from "./icons/linkedIn.svg";
 import { HeaderParagraph } from "../../common/HeaderParagraph/styled";
 
-export const Footer = () => (
+export const Footer: React.FC = () => (
   <Container>
     <HeaderParagraph>Lets talk!</HeaderParagraph>
     <EmailAdress href="mailto:kedfrontend@gmail.com" rel="noreferrer noopener">
@@ -21,10 +21,18 @@ export const Footer = () => (
       ideas come to life, feel free to contact me
     </Text>
     <ExternalLinksContainer>
-      <Link href="https://github.com/frontendkedra/" target="_blank" rel="noreferrer noopener">
+      <Link
+        href="https://github.com/frontendkedra/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         <Github />
       </Link>
-      <Link href="https://www.linkedin.com/in/kedrafrontend/" target="_blank" rel="noreferrer noopener">
+      <Link
+        href="https://www.linkedin.com/in/kedrafrontend/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         <LinkedIn />
       </Link>
     </ExternalLinksContainer>
