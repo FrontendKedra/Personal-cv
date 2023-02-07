@@ -1,4 +1,6 @@
-export const skillSetItemList = [
+import { List } from "../../../@types/listsTypes";
+
+export const skillSetItemList: List = [
   { content: "React", id: 1 },
   { content: "React Router", id: 2 },
   { content: "Promises, Async/Await", id: 3 },
