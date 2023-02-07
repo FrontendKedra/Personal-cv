@@ -1,11 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { RootState } from "../../store";
+
+interface InitialState {
+  repos: [];
+  reposState: { loading: boolean; success: boolean; error: boolean };
+}
+
+const initialState: InitialState = {
+  repos: [],
+  reposState: { loading: true, success: false, error: false },
+};
 
 const reposSlice = createSlice({
   name: "repos",
-  initialState: {
-    repos: [],
-    reposState: { loading: true, success: false, error: false },
-  },
+  initialState,
   reducers: {
     fetchReposResponse: () => {},
     setRepos: (state, { payload }) => {
@@ -26,8 +34,8 @@ const reposSlice = createSlice({
 export const { fetchReposResponse, setRepos, reposSuccess, reposError } =
   reposSlice.actions;
 
-export const selectReposState = (state) => state.repos;
-export const selectRepos = (state) => selectReposState(state).repos;
-export const selectReposCurrentState = (state) =>
+export const selectReposState = (state: RootState) => state.repos;
+export const selectRepos = (state: RootState) => selectReposState(state).repos;
+export const selectReposCurrentState = (state: RootState) =>
   selectReposState(state).reposState;
 export default reposSlice.reducer;
