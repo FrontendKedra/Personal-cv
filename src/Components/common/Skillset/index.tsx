@@ -8,7 +8,19 @@ import {
   Header,
 } from "./styled";
 
-export const SkillSet = ({ title, titleIcon, itemsList, ellipse }) => {
+interface SkillSetProps {
+  title: string;
+  titleIcon: JSX.Element;
+  itemsList: { content: string; id: number }[];
+  ellipse: string;
+}
+
+export const SkillSet = ({
+  title,
+  titleIcon,
+  itemsList,
+  ellipse,
+}: SkillSetProps) => {
   const itemList = itemsList;
 
   return (
