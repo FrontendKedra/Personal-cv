@@ -20,7 +20,7 @@ import { useEffect } from "react";
 import { Loader } from "./states/Loader";
 import { Error } from "./states/Error";
 
-export const Portfolio = () => {
+export const Portfolio: React.FC = () => {
   const dispatch = useDispatch();
   const repos = useSelector(selectRepos);
   const reposState = useSelector(selectReposCurrentState);
@@ -41,20 +41,20 @@ export const Portfolio = () => {
       ) : (
         <GithubReposContainer>
           {repos.map(
-            (repo) =>
-              repo.homepage && (
-                <RepositoryContainer key={repo.id}>
-                  <RepositoryHeader>{repo.name}</RepositoryHeader>
-                  <Description>{repo.description}</Description>
+            ({ id, name, description, homepage, html_url }) =>
+              homepage && (
+                <RepositoryContainer key={id}>
+                  <RepositoryHeader>{name}</RepositoryHeader>
+                  <Description>{description}</Description>
                   <LinkContainer>
                     <Description>Demo:</Description>
                     <span>
                       <RepositoryLink
-                        href={repo.homepage}
+                        href={homepage}
                         target="_blank"
                         rel="noreferrer noopener"
                       >
-                        {repo.homepage}
+                        {homepage}
                       </RepositoryLink>
                     </span>
                   </LinkContainer>
@@ -62,11 +62,11 @@ export const Portfolio = () => {
                     <Description>Code:</Description>
                     <span>
                       <RepositoryLink
-                        href={repo.html_url}
+                        href={html_url}
                         target="_blank"
                         rel="noreferrer noopener"
                       >
-                        {repo.html_url}
+                        {html_url}
                       </RepositoryLink>
                     </span>
                   </LinkContainer>
