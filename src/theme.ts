@@ -2,13 +2,18 @@ export interface ThemeFields {
   [index: string]: string;
 }
 
-export interface Theme {
+export interface SharedTheme {
   sharedColors: ThemeFields;
   breakpoints: ThemeFields;
   borderRadius: ThemeFields;
 }
 
-const sharedFields: Theme = {
+export interface Theme {
+  colors: ThemeFields;
+  shadows: ThemeFields;
+}
+
+const sharedFields: SharedTheme = {
   sharedColors: {
     violet: "#090a3305",
     darkerViolet: "#090a3308",
@@ -26,7 +31,7 @@ const sharedFields: Theme = {
   },
 };
 
-export const lightTheme = {
+export const lightTheme: Theme = {
   ...sharedFields,
   colors: {
     iron: "#d1d5da",
@@ -47,7 +52,7 @@ export const lightTheme = {
   },
 };
 
-export const darkTheme = {
+export const darkTheme: Theme = {
   ...sharedFields,
   colors: {
     iron: "#E5E5E5",
