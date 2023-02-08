@@ -1,3 +1,4 @@
+import { Lists } from "../../../@types/listsTypes";
 import {
   Container,
   Icon,
@@ -11,7 +12,7 @@ import {
 interface SkillSetProps {
   title: string;
   titleIcon: JSX.Element;
-  itemsList: { content: string; id: number }[];
+  itemsList: Lists[];
   ellipse: string;
 }
 

@@ -1,6 +1,6 @@
-import { List } from "../../../@types/listsTypes";
+import { Lists } from "../../../@types/listsTypes";
 
-export const skillSetItemList: List = [
+export const skillSetItemList: Lists[] = [
   { content: "React", id: 1 },
   { content: "React Router", id: 2 },
   { content: "Promises, Async/Await", id: 3 },
