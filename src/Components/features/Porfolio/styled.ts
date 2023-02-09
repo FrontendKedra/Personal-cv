@@ -1,5 +1,5 @@
 import styled from "styled-components";
-  
+
 export const PortfolioContainer = styled.div`
   max-width: 1200px;
   display: grid;
@@ -56,7 +56,7 @@ export const RepositoryContainer = styled.div`
   border: 6px solid ${({ theme }) => theme.colors.gray};
   transition: 0.3s;
   box-shadow: 0px -2px 50px ${({ theme }) => theme.sharedColors.violet},
-    0px 16px 58px ${({ theme }) => theme.sharedColors.darkerViolet}; 
+    0px 16px 58px ${({ theme }) => theme.sharedColors.darkerViolet};
 
   &:hover {
     border: 6px solid ${({ theme }) => theme.colors.lightBlue};

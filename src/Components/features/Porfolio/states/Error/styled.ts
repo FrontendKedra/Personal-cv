@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as dangerIcon } from "./danger.svg"
+import { ReactComponent as dangerIcon } from "./danger.svg";
 
 export const ErrorContainer = styled.div`
   display: grid;

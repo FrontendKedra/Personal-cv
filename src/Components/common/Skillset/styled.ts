@@ -57,7 +57,7 @@ export const ListItem = styled.li`
   font-size: 18px;
   line-height: 140%;
   list-style: none;
-  color: ${({theme})=> theme.colors.slateGray};
+  color: ${({ theme }) => theme.colors.slateGray};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     font-size: 14px;

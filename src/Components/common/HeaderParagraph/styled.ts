@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderParagraph = styled.p`
-  color: ${({theme})=> theme.colors.slateGray};
+  color: ${({ theme }) => theme.colors.slateGray};
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 12px;
