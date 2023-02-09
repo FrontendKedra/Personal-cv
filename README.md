@@ -2,7 +2,7 @@
 
 ## Description:
 
-My personal cv page containing stack information, contant email, github, linkedin links. Created using react, JS ES6+, redux-saga, Error handling, styled components, redux, APi(fetch), flex, grid
+My personal cv page containing stack information, contant email, github, linkedin links. Created using react, Javascript ES6+, Typescript, redux-saga, Error handling, styled components, redux, APi(fetch), flex, grid
 
 ## Demo: 
 
