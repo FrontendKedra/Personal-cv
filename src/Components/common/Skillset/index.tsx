@@ -21,23 +21,19 @@ export const SkillSet = ({
   titleIcon,
   itemsList,
   ellipse,
-}: SkillSetProps) => {
-  const itemList = itemsList;
-
-  return (
-    <Container>
-      <Header>
-        <Title>{title}</Title>
-        <Icon>{titleIcon}</Icon>
-      </Header>
-      <List>
-        {itemList.map(({ id, content }) => (
-          <Paragraph key={id}>
-            <img src={ellipse} alt="" />
-            <ListItem>{content}</ListItem>
-          </Paragraph>
-        ))}
-      </List>
-    </Container>
-  );
-};
+}: SkillSetProps) => (
+  <Container>
+    <Header>
+      <Title>{title}</Title>
+      <Icon>{titleIcon}</Icon>
+    </Header>
+    <List>
+      {itemsList.map(({ id, content }) => (
+        <Paragraph key={id}>
+          <img src={ellipse} alt="" />
+          <ListItem>{content}</ListItem>
+        </Paragraph>
+      ))}
+    </List>
+  </Container>
+);
