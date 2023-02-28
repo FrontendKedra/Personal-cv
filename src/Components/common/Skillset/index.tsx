@@ -1,4 +1,4 @@
-import { Lists } from "../../../@types/listsTypes";
+import { SkillSetProps } from "../../../@types/typesAndInterfaces";
 import {
   Container,
   Icon,
@@ -8,13 +8,6 @@ import {
   Title,
   Header,
 } from "./styled";
-
-interface SkillSetProps {
-  title: string;
-  titleIcon: JSX.Element;
-  itemsList: Lists[];
-  ellipse: string;
-}
 
 export const SkillSet = ({
   title,

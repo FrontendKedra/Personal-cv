@@ -1,4 +1,4 @@
-import { Lists } from "../../../@types/listsTypes";
+import { Lists } from "../../../@types/typesAndInterfaces";
 
 export const toLearnItemList: Lists[] = [
   { content: "React Query", id: 1 },
