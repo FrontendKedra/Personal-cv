@@ -20,7 +20,7 @@ import { useEffect } from "react";
 import { Loader } from "./states/Loader";
 import { Error } from "./states/Error";
 
-export const Portfolio: React.FC = () => {
+export const Portfolio = () => {
   const dispatch = useDispatch();
   const repos = useSelector(selectRepos);
   const reposState = useSelector(selectReposCurrentState);

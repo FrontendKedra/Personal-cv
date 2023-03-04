@@ -9,7 +9,7 @@ import { ReactComponent as Github } from "./icons/github.svg";
 import { ReactComponent as LinkedIn } from "./icons/linkedIn.svg";
 import { HeaderParagraph } from "../../common/HeaderParagraph/styled";
 
-export const Footer: React.FC = () => (
+export const Footer = () => (
   <Container>
     <HeaderParagraph>Lets talk!</HeaderParagraph>
     <EmailAdress href="mailto:kedfrontend@gmail.com" rel="noreferrer noopener">

@@ -17,7 +17,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectDarkBackground, toggleBackgroundColor } from "./backgroundSlice";
 import { HeaderParagraph } from "../../common/HeaderParagraph/styled";
 
-export const Introduction: React.FC = () => {
+export const Introduction = () => {
   const dispatch = useDispatch();
   const darkBackground = useSelector(selectDarkBackground);
 

@@ -1,6 +1,6 @@
 import { Icon, LoadingParagraph } from "./styled";
 
-export const Loader: React.FC = () => (
+export const Loader = () => (
   <>
     <LoadingParagraph>
       Please wait, projects are being loaded&hellip;
