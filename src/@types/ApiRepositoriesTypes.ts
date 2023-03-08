@@ -19,7 +19,7 @@ export interface Owner {
   site_admin: boolean;
 }
 
-export interface RootObject {
+export interface ApiResponse {
   id: number;
   node_id: string;
   name: string;

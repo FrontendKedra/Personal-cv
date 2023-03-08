@@ -1,4 +1,4 @@
-import { RootObject } from "../../@types/repositoriesTypes";
+import { ApiResponse } from "../../@types/ApiRepositoriesTypes";
 
 export const getGithubRepositories = async () => {
   const response = await fetch(
@@ -8,5 +8,5 @@ export const getGithubRepositories = async () => {
     new Error(response.statusText);
   }
 
-  return (await response.json()) as Promise<RootObject>;
+  return (await response.json()) as Promise<ApiResponse>;
 };
