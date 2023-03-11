@@ -5,7 +5,7 @@ export const getGithubRepositories = async () => {
     "https://api.github.com/users/frontendkedra/repos"
   );
   if (!response.ok) {
-    new Error(response.statusText);
+    throw new Error(response.statusText);
   }
 
   return (await response.json()) as Promise<ApiResponse>;
