@@ -2,7 +2,6 @@ import { Lists } from "../../../@types/typesAndInterfaces";
 
 export const toLearnItemList: Lists[] = [
   { content: "Jest", id: 1 },
-  { content: "React Testing Library", id: 2 },
-  { content: "React-router 6.0", id: 3 },
-  { content: "TanStack Query", id: 4 },
+  { content: "React-router 6.0", id: 2 },
+  { content: "TanStack Query", id: 3 },
 ];
