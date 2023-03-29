@@ -22,7 +22,9 @@ export const skillSetItemList: Lists[] = [
   { content: "Immutability", id: 19 },
   { content: "Responsive Web Design", id: 20 },
   { content: "Error handling", id: 21 },
-  { content: "CSS BEM convention", id: 22 },
-  { content: "Markdown", id: 23 },
-  { content: "Scrum", id: 24 },
+  { content: "React Testing Library", id: 22 },
+  { content: "Jest", id: 23 },
+  { content: "CSS BEM convention", id: 24 },
+  { content: "Markdown", id: 25 },
+  { content: "Scrum", id: 26 },
 ];
