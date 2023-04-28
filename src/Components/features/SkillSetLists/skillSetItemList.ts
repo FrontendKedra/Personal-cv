@@ -27,4 +27,5 @@ export const skillSetItemList: Lists[] = [
   { content: "CSS BEM convention", id: 24 },
   { content: "Markdown", id: 25 },
   { content: "Scrum", id: 26 },
+  { content: "Figma", id: 27 },
 ];
