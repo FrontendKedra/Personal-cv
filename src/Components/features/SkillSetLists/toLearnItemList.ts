@@ -4,4 +4,6 @@ export const toLearnItemList: Lists[] = [
   { content: "React-router 6.0", id: 1 },
   { content: "TanStack Query", id: 2 },
   { content: "Jira", id: 3 },
+  { content: "Angular", id: 4 },
+  { content: "Angular Material", id: 5 },
 ];
