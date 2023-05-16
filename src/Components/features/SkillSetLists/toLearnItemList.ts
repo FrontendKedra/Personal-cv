@@ -1,7 +1,6 @@
 import { Lists } from "../../../@types/typesAndInterfaces";
 
 export const toLearnItemList: Lists[] = [
-  { content: "React-router 6.0", id: 1 },
-  { content: "TanStack Query", id: 2 },
-  { content: "Jira", id: 3 },
+  { content: "TanStack Query", id: 1 },
+  { content: "Jira", id: 2 },
 ];
