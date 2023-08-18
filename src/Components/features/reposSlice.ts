@@ -1,8 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../../store";
+import { ApiResponse } from "../../@types/ApiRepositoriesTypes";
 
 interface InitialState {
-  repos: [];
+  repos: ApiResponse[];
   reposState: { loading: boolean; success: boolean; error: boolean };
 }
 
@@ -16,8 +17,14 @@ const reposSlice = createSlice({
   initialState,
   reducers: {
     fetchReposResponse: () => {},
-    setRepos: (state, { payload }) => {
-      state.repos = payload;
+    setRepos: (state, action: { payload: ApiResponse[] }) => {
+      const filteredRepos = action.payload.filter(
+        ({ name }) =>
+          name !== "FrontendKedra" &&
+          name !== "Beers-App" &&
+          name !== "Hex-Form"
+      );
+      state.repos = filteredRepos;
     },
     reposSuccess: ({ reposState }) => {
       reposState.loading = false;
