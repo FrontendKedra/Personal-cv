@@ -40,39 +40,40 @@ export const Portfolio = () => {
         <Error />
       ) : (
         <GithubReposContainer>
-          {repos.map(
-            ({ id, name, description, homepage, html_url }) =>
-              homepage && (
-                <RepositoryContainer key={id}>
-                  <RepositoryHeader>{name}</RepositoryHeader>
-                  <Description>{description}</Description>
-                  <LinkContainer>
-                    <Description>Demo:</Description>
-                    <span>
-                      <RepositoryLink
-                        href={homepage}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        {homepage}
-                      </RepositoryLink>
-                    </span>
-                  </LinkContainer>
-                  <LinkContainer>
-                    <Description>Code:</Description>
-                    <span>
-                      <RepositoryLink
-                        href={html_url}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        {html_url}
-                      </RepositoryLink>
-                    </span>
-                  </LinkContainer>
-                </RepositoryContainer>
-              )
-          )}
+          {repos.map(({ id, name, description, homepage, html_url }) => (
+            <RepositoryContainer key={id}>
+              <RepositoryHeader>{name}</RepositoryHeader>
+              <Description>{description}</Description>
+              <LinkContainer>
+                <Description>Demo:</Description>
+                <span>
+                  {!homepage ? (
+                    "No Demo for this project"
+                  ) : (
+                    <RepositoryLink
+                      href={homepage}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      {homepage}
+                    </RepositoryLink>
+                  )}
+                </span>
+              </LinkContainer>
+              <LinkContainer>
+                <Description>Code:</Description>
+                <span>
+                  <RepositoryLink
+                    href={html_url}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    {html_url}
+                  </RepositoryLink>
+                </span>
+              </LinkContainer>
+            </RepositoryContainer>
+          ))}
         </GithubReposContainer>
       )}
     </PortfolioContainer>
