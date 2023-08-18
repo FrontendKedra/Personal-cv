@@ -12,7 +12,7 @@ function* fetchReposResponseHandler() {
   try {
     yield delay(1500);
     yield put(reposSuccess());
-    const reposResponse: ApiResponse = yield call(getGithubRepositories);
+    const reposResponse: ApiResponse[] = yield call(getGithubRepositories);
     yield put(setRepos(reposResponse));
   } catch (error) {
     yield put(reposError());
