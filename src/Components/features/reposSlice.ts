@@ -21,8 +21,7 @@ const reposSlice = createSlice({
       const filteredRepos = action.payload.filter(
         ({ name }) =>
           name !== "FrontendKedra" &&
-          name !== "Beers-App" &&
-          name !== "Hex-Form"
+          name !== "gn-news"
       );
       state.repos = filteredRepos;
     },
