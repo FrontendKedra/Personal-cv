@@ -20,7 +20,10 @@ const reposSlice = createSlice({
     setRepos: (state, action: { payload: ApiResponse[] }) => {
       const filteredRepos = action.payload.filter(
         ({ name }) =>
-          name !== "FrontendKedra" && name !== "gn-news" && name !== "design"
+          name !== "FrontendKedra" &&
+          name !== "gn-news" &&
+          name !== "design" &&
+          name !== "test-blogposts"
       );
       state.repos = filteredRepos;
     },
