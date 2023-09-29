@@ -9,6 +9,7 @@ import {
   Description,
   LinkContainer,
   RepositoryLink,
+  DemoCodeContainer,
 } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -43,7 +44,14 @@ export const Portfolio = () => {
           {repos.map(({ id, name, description, homepage, html_url }) => (
             <RepositoryContainer key={id}>
               <RepositoryHeader>{name}</RepositoryHeader>
-              <Description>{description}</Description>
+              {!!description ? (
+                <Description>{description}</Description>
+              ) : (
+                <Description>
+                  This project does not contain a description at the moment. Please check back later
+                </Description>
+              )}
+              <DemoCodeContainer>
               <LinkContainer>
                 <Description>Demo:</Description>
                 <span>
@@ -71,7 +79,8 @@ export const Portfolio = () => {
                     {html_url}
                   </RepositoryLink>
                 </span>
-              </LinkContainer>
+                </LinkContainer>
+                </DemoCodeContainer>
             </RepositoryContainer>
           ))}
         </GithubReposContainer>

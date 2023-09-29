@@ -117,3 +117,14 @@ export const RepositoryLink = styled.a`
     line-height: 17px;
   }
 `;
+
+export const DemoCodeContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  align-content: start;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    gap: 10px;
+  }
+`;
