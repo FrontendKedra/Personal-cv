@@ -48,7 +48,7 @@ export const Portfolio = () => {
                 <Description>{description}</Description>
               ) : (
                 <Description>
-                  This project does not contain a description at the moment. Please check back later
+                  This project does not contain a description at the moment. Please check back later.
                 </Description>
               )}
               <DemoCodeContainer>
