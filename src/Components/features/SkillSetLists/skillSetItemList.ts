@@ -3,6 +3,7 @@ import { Lists } from "../../../@types/typesAndInterfaces";
 export const skillSetItemList: Lists[] = [
   { content: "React", id: 1 },
   { content: "React Router", id: 2 },
+  { content: "Next.js", id: 29 },
   { content: "Promises, Async/Await", id: 3 },
   { content: "Typescript", id: 4 },
   { content: "React Query", id: 5 },
